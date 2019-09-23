@@ -1,0 +1,57 @@
+/* .App {
+} */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+padding: 0;	
+margin:	0;	
+}
+/*定义外边框为0 内边框为0*/
+body{
+font-family:"微软雅黑","宋体",Arial;	
+font-size:12px;
+color: #555;
+}
+/*定义文字为"微软雅黑","宋体",arial 定义文字大小为12px*/
+img{
+vertical-align:top;
+border:0;
+}
+/*解决图片插入bug*/
+li{
+list-style:none;
+}
+/*去掉列表序列*/
+a{
+text-decoration: none;
+color:#ffffff;
+}
+/*定义超链接删除下划线 定义超链接文字颜色为白色*/
+.sl{	
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+/*多余字数显示省略号*/
+.cl:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+.cl{
+	zoom:1;
+}
+/*万能清除浮动带来的高度塌陷*/
+a:hover{
+	color: red !important;
+}
+html{
+	/*7.5为设计稿的宽度*/
+	font-size: -webkit-calc(100vw/7.5);
+	/*此时定义了在750的设计稿下  1rem=100px*/
+}
+body{
+	font-size: 0.24rem;
+}
